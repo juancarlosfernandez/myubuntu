@@ -33,27 +33,6 @@ golang() {
   wget https://storage.googleapis.com/golang/go$VERSION.linux-amd64.tar.gz -O /tmp/golang.tgz
   tar -C $HOME -xzf /tmp/golang.tgz 
 
-  if [ -e ~/.bashrc ]; then
-      cat >> $HOME/.bashrc <<EOF
-export GOPATH=\$HOME/git
-export GOROOT=\$HOME/go
-export PATH=\$PATH:\$GOPATH/bin:\$GOROOT/bin
-EOF
-  fi
-
-  if [ -e $HOME/.zshrc ]; then
-      cat >> $HOME/.zshrc <<EOF
-export GOPATH=\$HOME/git
-export GOROOT=\$HOME/go
-export PATH=\$PATH:\$GOPATH/bin:\$GOROOT/bin
-EOF
-  fi
-
-  
-  export GOPATH=$HOME/git
-  export GOROOT=$HOME/go
-  export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
-
   # Install stringer (for //go:generate -> https://blog.golang.org/generate)
   go get golang.org/x/tools/cmd/stringer
 
