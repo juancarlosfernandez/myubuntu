@@ -25,6 +25,9 @@ vmguestpackages() {
   set -e
  
   printf "${BLUE}Installing Ubuntu drivers for VMware GUEST (OPTIONAL)...${NORMAL}\n"
+  sudo apt-get update
+  sudo apt-get -y dist-upgrade
+  sudo apt-get -y autoremove  
   sudo apt-get -y install \
     open-vm-tools \
     open-vm-tools-desktop
