@@ -27,7 +27,7 @@ zsh() {
   # oh-my-zsh
   printf "${BLUE}Installing Oh-my-zsh...${NORMAL}\n"
   curl -Lo /tmp/install-zsh.sh https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
-  sh /tmp/install.sh --unattended
+  sh /tmp/install-zsh.sh --unattended
   sed -i "s/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"agnoster\"/" ~/.zshrc  
 
   # Choice my plugins
