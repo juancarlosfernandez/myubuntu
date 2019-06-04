@@ -27,30 +27,30 @@ golang() {
   ###################################
   # Golang
 
-  VERSION=1.12.5
+  VERSION=1.12.1
 
   printf "${BLUE}Installing Go...${NORMAL}\n"
   wget https://storage.googleapis.com/golang/go$VERSION.linux-amd64.tar.gz -O /tmp/golang.tgz
   tar -C $HOME -xzf /tmp/golang.tgz 
 
-  if [ -e ~/.bashrc ]; then	
-      cat >> $HOME/.bashrc <<EOF	
-export GOPATH=\$HOME/git	
-export GOROOT=\$HOME/go	
-export PATH=\$PATH:\$GOPATH/bin:\$GOROOT/bin	
-EOF	
-  fi	
+  if [ -e ~/.bashrc ]; then
+      cat >> $HOME/.bashrc <<EOF
+export GOPATH=\$HOME/git
+export GOROOT=\$HOME/go
+export PATH=\$PATH:\$GOPATH/bin:\$GOROOT/bin
+EOF
+  fi
 
-   if [ -e $HOME/.zshrc ]; then	
-      cat >> $HOME/.zshrc <<EOF	
-export GOPATH=\$HOME/git	
-export GOROOT=\$HOME/go	
-export PATH=\$PATH:\$GOPATH/bin:\$GOROOT/bin	
-EOF	
-  fi	
+  if [ -e $HOME/.zshrc ]; then
+      cat >> $HOME/.zshrc <<EOF
+export GOPATH=\$HOME/git
+export GOROOT=\$HOME/go
+export PATH=\$PATH:\$GOPATH/bin:\$GOROOT/bin
+EOF
+  fi
 
-  export GOPATH=$HOME/git	
-  export GOROOT=$HOME/go	
+  export GOPATH=$HOME/git
+  export GOROOT=$HOME/go
   export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
   # Install stringer (for //go:generate -> https://blog.golang.org/generate)
