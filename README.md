@@ -1,8 +1,9 @@
 # myubuntu
 
-Sets up my Ubuntu 16.04 Desktop System (experimental)
+Sets up my Ubuntu 18.04 LTS Desktop System
 
-To execute it, you must login with your username (must be sudoer) to a clean Ubuntu 16.04/18.04 Desktop installation:
+To execute it, you must login with your username (must be sudoer) to a **clean** Ubuntu 18.04 Desktop installation.
+
 
 ### Full Installation
 
@@ -24,7 +25,7 @@ bash -c "$(wget https://raw.githubusercontent.com/jig/myubuntu/master/install-aw
 
 # VMware
 
-If you are installing a virtual machine (VMware) it is recomeded to install its drivers (they are not installed by default)
+If you are installing a virtual machine (VMware) it is recomeded to install Virtual Machine drivers (they are not installed by script above)
 
 ```shell
 bash -c "$(wget https://raw.githubusercontent.com/jig/myubuntu/master/install-vmguest.sh -O -)"
