@@ -15,6 +15,9 @@ You can install this via the command-line with `wget`.
 bash -c "$(wget https://raw.githubusercontent.com/jig/myubuntu/master/install-all.sh -O -)"
 ```
 
+Note: Powerline fonts are not enabled by the script above (only installed). To use them right-click on the terminal and choose
+any of the fonts that contain *Powerline*.
+
 ### Partial Installation
 
 You can install just one item just invoking one of the `install-?.sh` scripts; for instance:
