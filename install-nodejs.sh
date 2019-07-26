@@ -25,10 +25,10 @@ install_nodejs() {
   set -e
  
   ###################################
-  # NodeJS 6 LTS
+  # NodeJS 10 LTS
   printf "${BLUE}Installing Nodejs...${NORMAL}\n"
   sudo apt-get -y install curl
-  curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+  curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
   sudo apt-get -y install nodejs
 }
 
