@@ -41,11 +41,6 @@ install_kops() {
   # helm
   printf "${BLUE}Installing helm...${NORMAL}\n"
   sudo snap install helm --classic
-
-  # kind
-  printf "${BLUE}Installing kind (kubernetes in docker)...${NORMAL}\n"
-  cd /tmp
-  GO111MODULE="on" go get sigs.k8s.io/kind@v0.4.0
 }
 
 # Check if reboot is needed
