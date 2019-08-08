@@ -33,14 +33,25 @@ install_kops() {
   sudo mv ./kubectl /usr/local/bin/kubectl
   echo "source <(kubectl completion bash)" >> ~/.bashrc
   echo "source <(kubectl completion zsh)" >> ~/.zshrc  
-  
-  curl -LO https://github.com/kubernetes/kops/releases/download/1.7.0/kops-linux-amd64
-  chmod +x ./kops-linux-amd64
-  sudo mv ./kops-linux-amd64 /usr/local/bin/kops
 
   # helm
   printf "${BLUE}Installing helm...${NORMAL}\n"
   sudo snap install helm --classic
+
+  # eksctl
+  printf "${BLUE}Installing eksctl...${NORMAL}\n"
+  curl --silent --location "https://github.com/weaveworks/eksctl/releases/download/latest_release/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+  sudo mv /tmp/eksctl /usr/local/bin
+
+  # kind
+  # this requires go
+  printf "${BLUE}Installing kind (kubernetes in docker)...${NORMAL}\n"
+  source $HOME/.bashrc
+  if command -v go; then
+    GO111MODULE="on" go get sigs.k8s.io/kind@v0.4.0
+  else
+    printf "${YELLOW}kind could not be installed because go command is not found${NORMAL}\n"
+  fi
 }
 
 # Check if reboot is needed

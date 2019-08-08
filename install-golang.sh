@@ -77,12 +77,6 @@ EOF
   go get -u github.com/newhook/go-symbols
   go get -u golang.org/x/tools/cmd/guru
   go get -u github.com/golangci/golangci-lint/cmd/golangci-lint
-
-  # kind
-  # this is related to the install kops script, but it requires go
-  printf "${BLUE}Installing kind (kubernetes in docker)...${NORMAL}\n"
-  cd /tmp
-  GO111MODULE="on" go get sigs.k8s.io/kind@v0.4.0
 }
 
 # Check if reboot is needed
