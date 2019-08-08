@@ -46,7 +46,7 @@ everything() {
   bash -c "$(wget https://raw.githubusercontent.com/jig/myubuntu/$BRANCH/install-powerlinefonts.sh -O -)"
   bash -c "$(wget https://raw.githubusercontent.com/jig/myubuntu/$BRANCH/install-golang.sh -O -)"
   bash -c "$(wget https://raw.githubusercontent.com/jig/myubuntu/$BRANCH/install-awscli.sh -O -)"
-  bash -c "$(wget https://raw.githubusercontent.com/jig/myubuntu/$BRANCH/install-kops.sh -O -)"
+  bash -c "$(wget https://raw.githubusercontent.com/jig/myubuntu/$BRANCH/install-kubernetes.sh -O -)"
   
   # Ruby+Panoràmix
   # bash -c "$(wget https://raw.githubusercontent.com/jig/myubuntu/$BRANCH/install-panoramix.sh -O -)"
