@@ -36,6 +36,7 @@ basepackages() {
     openssh-client \
     htop \
     build-essential \
+    smbclient \
     gcc \
     make
 }
