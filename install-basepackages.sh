@@ -35,7 +35,10 @@ basepackages() {
     openssh-server \
     openssh-client \
     htop \
-    build-essential
+    build-essential \
+    gcc \
+    gcc-c++ \
+    make
 }
 
 # Check if reboot is needed
