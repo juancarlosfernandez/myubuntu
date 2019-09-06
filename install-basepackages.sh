@@ -37,7 +37,6 @@ basepackages() {
     htop \
     build-essential \
     gcc \
-    gcc-c++ \
     make
 }
 
