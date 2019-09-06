@@ -28,7 +28,6 @@ java() {
   sudo add-apt-repository ppa:webupd8team/java -y
   sudo apt-get update
   printf "${BLUE}Installing JAVA...${NORMAL}\n"
-  sudo echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | sudo debconf-set-selections
-  sudo apt-get install oracle-java8-set-default -y
+  sudo apt install openjdk-8-jdk
   }
 java
