@@ -24,10 +24,7 @@ java() {
   # which may fail on systems lacking tput or terminfo
   set -e
 
-  printf "${BLUE}Installing JAVA PPA...${NORMAL}\n"
-  sudo add-apt-repository ppa:webupd8team/java -y
-  sudo apt-get update
   printf "${BLUE}Installing JAVA...${NORMAL}\n"
-  sudo apt install openjdk-8-jdk
+  sudo apt install openjdk-8-jdk openjdk-8-jre
   }
 java
