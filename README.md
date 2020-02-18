@@ -12,7 +12,7 @@ You can install this via the command-line with `wget`.
 
 
 ```shell
-bash -c "$(wget https://raw.githubusercontent.com/jig/myubuntu/master/install-all.sh -O -)"
+bash -c "$(wget https://raw.githubusercontent.com/juancarlosfernandez/trustedx-ubuntu/master/install-all.sh -O -)"
 ```
 
 Note: Powerline fonts are not enabled by the script above (only installed). To use them right-click on the terminal and choose
@@ -23,7 +23,7 @@ any of the fonts that contain *Powerline*.
 You can install just one item just invoking one of the `install-?.sh` scripts; for instance:
 
 ```shell
-bash -c "$(wget https://raw.githubusercontent.com/jig/myubuntu/master/install-awscli.sh -O -)"
+bash -c "$(wget https://raw.githubusercontent.com/juancarlosfernandez/trustedx-ubuntu/master/install-awscli.sh -O -)"
 ```
 
 # VMware
@@ -31,7 +31,7 @@ bash -c "$(wget https://raw.githubusercontent.com/jig/myubuntu/master/install-aw
 If you are installing a virtual machine (VMware) it is recomeded to install Virtual Machine drivers (they are not installed by script above)
 
 ```shell
-bash -c "$(wget https://raw.githubusercontent.com/jig/myubuntu/master/install-vmguest.sh -O -)"
+bash -c "$(wget https://raw.githubusercontent.com/juancarlosfernandez/trustedx-ubuntu/master/install-vmguest.sh -O -)"
 ```
 
 ## note
