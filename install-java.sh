@@ -25,6 +25,6 @@ java() {
   set -e
 
   printf "${BLUE}Installing JAVA...${NORMAL}\n"
-  sudo apt install openjdk-8-jdk openjdk-8-jre
+  sudo apt install -y openjdk-8-jdk openjdk-8-jre
   }
 java
