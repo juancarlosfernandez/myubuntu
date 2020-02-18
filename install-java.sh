@@ -25,6 +25,7 @@ java() {
   set -e
 
   printf "${BLUE}Installing JAVA PPA...${NORMAL}\n"
+  sudo apt install libappindicator3-1 -y
   sudo add-apt-repository ppa:webupd8team/java -y
   sudo apt-get update
   printf "${BLUE}Installing JAVA...${NORMAL}\n"
