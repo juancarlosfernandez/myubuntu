@@ -25,6 +25,7 @@ chrome() {
   set -e
 
   printf "${BLUE}Downloading Google Chrome...${NORMAL}\n"
+  sudo apt install libappindicator3-1 -y
   wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O /tmp/google-chrome-stable_current_amd64.deb
 
   printf "${BLUE}Installing Google Chrome...${NORMAL}\n"
